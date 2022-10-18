@@ -42,11 +42,11 @@ function Cell(i, j) {
         // // line from top right of each cell to the bottom right of each cell
         // // Green
         // stroke(110, 100, 100);
-        // line(x + w + 5, y, x + w + 5, y + w);
+        // line(x + w , y, x + w, y + w);
         // // line from bottom left of each cell to the bottom right of each cell
         // // BLUE
         // stroke(250, 100, 100);
-        // line(x, y + w + 5, x + w, y + w + 5);
+        // line(x, y + w, x + w, y + w);
         // noFill();
         // rect(x, y, w, w);
     }
