@@ -8,6 +8,7 @@ function setup() {
     createCanvas(400, 400);
     cols = floor(width / w);
     rows = floor(height / w);
+    frameRate(5);
 
     for (var j = 0; j < rows; j++) {
         for (var i = 0; i < cols; i++) {
@@ -26,7 +27,11 @@ function draw() {
     }
 
     current.visited = true;
-    current.checkNeighbors();
+    var next = current.checkNeighbors();
+    if (next) {
+        next.visited = true;
+        current = next;
+    }
 }
 
 function index(i, j) {
@@ -93,7 +98,7 @@ function Cell(i, j) {
         }
 
         if (this.visited) {
-            fill(255, 0, 255, 100);
+            fill(20, 180, 255, 100);
             rect(x, y, w, w);
         }
 
