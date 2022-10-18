@@ -62,6 +62,13 @@ function Cell(i, j) {
         if (left && !left.visited) {
             neighbors.push(left);
         }
+
+        if (neighbors.length > 0) {
+            var r = floor(random(0, neighbors.length));
+            return neighbors[r];
+        } else {
+            return undefined;
+        }
     }
 
     this.show = function () {
