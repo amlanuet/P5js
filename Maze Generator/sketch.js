@@ -31,22 +31,26 @@ function Cell(i, j) {
     this.show = function () {
         var x = this.i * w;
         var y = this.j * w;
-        // line from top left of each cell to the top right of each cell
-        // RED
-        stroke(1, 100, 100);
-        line(x, y, x + w, y);
-        // line from top left of each cell to the bottom left of each cell
-        // YELLOW
-        stroke(60, 100, 100);
-        line(x, y, x, y + w);
-        // // line from top right of each cell to the bottom right of each cell
-        // // Green
-        // stroke(110, 100, 100);
-        // line(x + w , y, x + w, y + w);
-        // // line from bottom left of each cell to the bottom right of each cell
-        // // BLUE
-        // stroke(250, 100, 100);
-        // line(x, y + w, x + w, y + w);
+        this.walls = [true, false, false, false]
+        stroke(255);
+        if (this.walls[0]) {
+            // line from top left of each cell to the top right of each cell
+            line(x, y, x + w, y);
+        }
+        if (this.walls[1]) {
+            // line from top right of each cell to the bottom right of each cell
+            line(x + w, y, x + w, y + w);
+        }
+        if (this.walls[2]) {
+            // line from bottom right of each cell to the bottom left of each cell
+            line(x + w, y + w, x, y + w);
+        }
+        if (this.walls[3]) {
+            // line from bottom left of each cell to the top left of each cell
+            line(x, y + w, x, y);
+        }
+
+
         // noFill();
         // rect(x, y, w, w);
     }
