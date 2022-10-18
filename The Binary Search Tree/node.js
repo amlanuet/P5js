@@ -4,6 +4,16 @@ function Node(val) {
     this.right = null;
 }
 
+Node.prototype.search = function (val) {
+    if (this.value == val) {
+        return this;
+    } else if (val < this.value && this.left != null) {
+        return this.left.search(val);
+    } else if (val > this.value && this.right != null) {
+        return this.right.search(val);
+    }
+}
+
 Node.prototype.visit = function () {
     if (this.left != null) {
         this.left.visit();
