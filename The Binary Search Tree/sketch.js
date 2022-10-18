@@ -8,6 +8,7 @@ function setup() {
         tree.addValue(floor(random(100)));
     }
     console.log(tree);
+    tree.traverse();
 }
 
 function draw() {
