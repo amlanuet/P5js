@@ -1,7 +1,14 @@
+let snow = [];
+
 function setup() {
-  // put setup code here
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
-  // put drawing code here
+  background(0);
+  snow.push(new SnowFlake);
+  
+  for (flake of snow) {
+    flake.render();
+  }
 }
