@@ -1,6 +1,6 @@
 function getRandomSize() {
-    let r = randomGaussian() * 2;
-    return constrain(abs(r * r), 3, 36);
+    let r = randomGaussian() * 5;
+    return constrain(abs(r * r), 10, 32);
 
     // while (true) {
     //     let r1 = random(1);
@@ -13,9 +13,10 @@ function getRandomSize() {
 
 class SnowFlake {
 
-    constructor(sx, sy) {
+    constructor(sx, sy, img) {
         let x = sx || random(width);
         let y = sy || random(-100, -10)
+        this.img = img;
         this.pos = createVector(x, y);
         this.vel = createVector(0, 0);
         this.acc = createVector();
@@ -59,9 +60,11 @@ class SnowFlake {
     }
 
     render() {
-        stroke(255);
-        strokeWeight(this.r);
-        point(this.pos.x, this.pos.y);
+        // stroke(255);
+        // strokeWeight(this.r);
+        // point(this.pos.x, this.pos.y);
+        imageMode(CENTER);
+        image(this.img, this.pos.x, this.pos.y, this.r, this.r)
     }
 
     // offScreen() {
