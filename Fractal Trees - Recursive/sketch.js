@@ -5,11 +5,12 @@ function setup() {
 function draw() {
   background(51);
   stroke(255);
-  branch(50);
+  translate(200, height);
+  branch(100);
 }
 
 // teken de stam van de boom
 function branch(len) {
-  line(200, height, 200, height - len);
+  line(0, 0, 0, -len);
 
 }
