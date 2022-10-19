@@ -13,7 +13,13 @@ function draw() {
 
   for (flake of snow) {
     flake.applyForce(gravity);
-    flake.render();
     flake.update();
+    flake.render();
+  }
+
+  for (let i = snow.length - 1; i >= 0; i--) {
+    if (snow[i].offScreen()) {
+      snow.splice(i, 1)
+    }
   }
 }
