@@ -64,8 +64,8 @@ class SnowFlake {
         point(this.pos.x, this.pos.y);
     }
 
-    offScreen() {
-        return (this.pos.y > height + this.r);
-    }
+    // offScreen() {
+    //     return (this.pos.y > height + this.r);
+    // }
 
 }
