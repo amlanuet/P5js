@@ -1,13 +1,26 @@
+function getRandomSize() {
+    let r = randomGaussian() * 2;
+    return constrain(abs(r * r), 3, 36);
+
+    // while (true) {
+    //     let r1 = random(1);
+    //     let r2 = random(1);
+    //     if (r2 > r1) {
+    //         return r1 * 36;
+    //     }
+    // }
+}
+
 class SnowFlake {
 
-    constructor() {
-        let x = random(width);
-        let y = random(-100, -10)
+    constructor(sx, sy) {
+        let x = sx || random(width);
+        let y = sy || random(-100, -10)
         this.pos = createVector(x, y);
         this.vel = createVector(0, 0);
         this.acc = createVector();
-        this.r = random(1, 16);
-        this.terminalV = this.r * 0.2; 
+        this.r = getRandomSize();
+        this.terminalV = this.r * 0.2;
     }
 
     applyForce(force) {
@@ -19,11 +32,30 @@ class SnowFlake {
         this.acc.add(f);
     }
 
+    randomize() {
+        let x = random(width);
+        let y = random(-100, -10)
+        this.pos = createVector(x, y);
+        this.vel = createVector(0, 0);
+        this.acc = createVector();
+        this.r = getRandomSize();
+        this.terminalV = this.r * 0.2;
+    }
+
     update() {
         this.vel.add(this.acc);
         this.vel.limit(this.terminalV);
+
+        if (this.vel.mag() < 1) {
+            this.vel.normalize();
+        }
+
         this.pos.add(this.vel);
         this.acc.mult(0);
+
+        if (this.pos.y > height + this.r) {
+            this.randomize();
+        }
     }
 
     render() {
