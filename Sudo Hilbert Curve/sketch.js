@@ -1,20 +1,29 @@
 colored = true;
-var order = 4;
-var N = Math.pow(2, order);
-var total = N * N;
-var path = []
-var direction = 1;
+var order = 0;
+var N;
+var total;
+var path = [];
+var direction;
 
-function setup() {
-  colorMode(HSB,360,255,255)
-  createCanvas(512, 512);
-  background(0);
+function nextOrder() {
+  order = order + 1;
+  N = Math.pow(2, order);
+  total = N * N;
+  path = [];
+  direction = 1;
   for (let i = 0; i < total; i++) {
     path[i] = hilbert(i);
     len = width / N;
     path[i].mult(len);
     path[i].add(len / 2, len / 2);
   }
+}
+
+function setup() {
+  colorMode(HSB, 360, 255, 255)
+  createCanvas(512, 512);
+  background(0);
+  nextOrder();
 }
 
 function hilbert(i) {
@@ -53,23 +62,23 @@ function draw() {
   stroke(255);
   strokeWeight(1);
   noFill();
-  beginShape();
+  // beginShape();
   noFill()
   for (var i = 1; i < counter; i++) {
     if (colored) {
       h = map(i, 0, path.length, 0, 360)
       stroke(h, 255, 255)
-    } else {
+    } else { 
       stroke(255)
     }
     line(path[i].x, path[i].y, path[i - 1].x, path[i - 1].y)
   }
-  endShape();
+  // endShape();
   counter += direction;
-  if (counter == path.length) {
-    direction = -1;
-  } else if (counter == 0) {
-    direction = 1;
+  if (counter >= path.length) {
+    direction = -4;
+  } else if (counter <= 0) {
+    nextOrder();
   }
 
   // strokeWeight(2);
