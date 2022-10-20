@@ -1,3 +1,4 @@
+colored = true;
 var order = 4;
 var N = Math.pow(2, order);
 var total = N * N;
@@ -5,6 +6,7 @@ var path = []
 var direction = 1;
 
 function setup() {
+  colorMode(HSB,360,255,255)
   createCanvas(512, 512);
   background(0);
   for (let i = 0; i < total; i++) {
@@ -52,11 +54,18 @@ function draw() {
   strokeWeight(1);
   noFill();
   beginShape();
-  for (let i = 0; i < counter; i++) {
-    vertex(path[i].x, path[i].y);
+  noFill()
+  for (var i = 1; i < counter; i++) {
+    if (colored) {
+      h = map(i, 0, path.length, 0, 360)
+      stroke(h, 255, 255)
+    } else {
+      stroke(255)
+    }
+    line(path[i].x, path[i].y, path[i - 1].x, path[i - 1].y)
   }
   endShape();
-  counter+=direction;
+  counter += direction;
   if (counter == path.length) {
     direction = -1;
   } else if (counter == 0) {
