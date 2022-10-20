@@ -23,13 +23,20 @@ function hilbert(i) {
   index = i & 3;
   var lenght = order;
   if (index == 0) {
-
+    // verwissel index 1 en 3
+    var temp = v.x
+    v.x = v.y;
+    v.y = temp;
   } else if (index == 1) {
     v.y+=lenght;
   } else if (index == 2) {
     v.x+=lenght;
     v.y+=lenght;
   } else if (index == 3) {
+    // verwissel index 0 en 2
+    var temp = lenght-1-v.x
+    v.x = lenght-1-v.y
+    v.y = temp
     v.x+=lenght;
   }
   return v;
