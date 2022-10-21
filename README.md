@@ -1,4 +1,4 @@
-# Welcome to p5.js
+# Welcome to @amlanuet 's p5 EXP
 
 You have downloaded the complete p5.js library ZIP file with my own projects, yay!
 
