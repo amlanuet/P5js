@@ -15,6 +15,8 @@ function setup() {
 
 function draw() {
   background(51);
+  ortho();
+  directionalLight(255, 255, 255, 0, -1, 0)
   translate(0, 50, -50)
   rotateX(-PI / 8)
   // translate(width / 2, height / 2);
@@ -23,13 +25,13 @@ function draw() {
   // rotateX(angle * 0.25)
 
   let offset = 0;
-  for (let x = 0; x < width; x+=w) {
+  for (let x = 0; x < width; x += w) {
     push();
     let a = angle + offset;
     let h = map(sin(a), -1, 1, 0, 100);
-    fill(255);
     translate(x - width / 2, 0, 0);
-    box(w, h, w);
+    normalMaterial(255);
+    box(w - 2, h, w);
     // rect(x - width / 2 + w / 2, 0, w - 2, h);
     offset += offsetSlider.value();
     pop();
