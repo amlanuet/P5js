@@ -1,6 +1,6 @@
-# Welcome to @amlanuet 's p5 EXP
+# Welcome to my P5 Experience/project DEMOS
 
-You have downloaded the complete p5.js library ZIP file with my own projects, yay!
+You have downloaded the complete p5.js library ZIP file with my own added projects and coding challenges, yay!
 
 # Contents of P5js
 
