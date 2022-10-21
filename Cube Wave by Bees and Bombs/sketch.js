@@ -10,7 +10,7 @@ function draw() {
   translate(width / 2, height / 2);
   rectMode(CENTER);
 
-  let h = 100;
+  let h = map(sin(angle), -1, 1, 0, 100);
   fill(255);
   rect(0, 0, 10, h);
 
