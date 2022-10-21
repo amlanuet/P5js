@@ -22,20 +22,31 @@ You have downloaded the complete p5.js library ZIP file with my own projects, ya
 
 ## A Star Pathfinding Algorithm
 
-Attempt at implementation of the A* pathfinding algorithm to find the optimal path between two points in a 2D grid
+Attempt at implementation of the A* pathfinding algorithm to find the optimal path between two points in a 2D grid.
 
 ## Cube Wave by Bees and Bombs
 
-Attempt recreate a 3D @beesandbombs GIF with p5.js and the WebGL renderer
+Attempt recreate a 3D @beesandbombs GIF with p5.js and the WebGL renderer.
 
 ## Fractal Trees - Recursive
 
-Attempt at implement fractal trees with recursion in p5.js
+Attempt at implement fractal trees with recursion in p5.js.
 
-## Maze Generator
+## Maze Generator\
+
+Using a stack and generating a maze using the Depth-First Search and Recursive algorithm.
+
 ## Snowfall
+
+Attempt to create a snowfall simulation using p5.js, sprite sheets and Perlin noise wind
+
 ## Sudo Hilbert Curve
+
+I attempt to animate the path of the classic "space filling curve" known as the Hilbert Curve.
+
 ## The Binary Search Tree (console only)
+
+Here I attempt to implement a classic data structure: The Binary Search Tree.
 
 ## p5.js
 
