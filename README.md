@@ -1,19 +1,41 @@
 # Welcome to p5.js
 
-You have downloaded the complete p5.js library ZIP file, yay!
+You have downloaded the complete p5.js library ZIP file with my own projects, yay!
 
-# Contents of the p5 folder
+# Contents of P5js
 
+* A Star Pathfinding Algorithm
+* Cube Wave by Bees and Bombs
+* Fractal Trees - Recursive
+* Maze Generator
+* Snowfall
+* Sudo Hilbert Curve
+* The Binary Search Tree (console only)
 * p5.js file
 * p5.min.js file
 * addons folder
   * p5.sound.js
   * p5.sound.min.js
-* empty-example folder
+* Starting Template
   * index.html
-  * p5.js
-  * p5.sound.js
   * sketch.js
+
+## A Star Pathfinding Algorithm
+
+Attempt at implementation of the A* pathfinding algorithm to find the optimal path between two points in a 2D grid
+
+## Cube Wave by Bees and Bombs
+
+Attempt recreate a 3D @beesandbombs GIF with p5.js and the WebGL renderer
+
+## Fractal Trees - Recursive
+
+Attempt at implement fractal trees with recursion in p5.js
+
+## Maze Generator
+## Snowfall
+## Sudo Hilbert Curve
+## The Binary Search Tree (console only)
 
 ## p5.js
 
@@ -31,7 +53,7 @@ The addons folder includes additional p5.js related libraries, in both original 
 
 p5.sound extends p5.js with Web Audio functionality including audio input, playback, analysis, and synthesis.
 
-## empty-example folder
+## Starting Template
 
 This is an empty example of a website. The folder includes the file for the website, index.html, the p5.js library, other related p5.js libraries, and a template starting point for your p5.js sketch, called sketch.js.
 
@@ -49,16 +71,16 @@ This README file formatted with Markdown :)
 
 # What's next?
 
-If you need more information to help get you started, please refer to our website:  
+If you need more information to help get you started, please refer to the official p5 Website:  
 https://p5js.org/get-started/ and https://p5js.org/learn/
 
 An online reference to the p5.js library is available here:  
 https://p5js.org/reference/
 
-In order to run your website (including the empty-example), you need to enable a local server, please see this tutorial in our wiki:  
-https://github.com/processing/p5.js/wiki/Local-server
+In order to run your website (including the starting Template), you need to enable a local server, please see this tutorial in our wiki:  
+https://github.com/processing/p5.js/wiki/Local-server or use vs code live server or any other http server for that matter
 
-p5.js is a community and p5.js is built by contributions. If you want to learn more about us, visit:  
+p5.js is a community and p5.js is built by contributions. If you want to learn more that, visit there website at:  
 https://p5js.org/community/
 
 # License
