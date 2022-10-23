@@ -1,6 +1,6 @@
 # Welcome to my P5 Experience/project DEMOS
 
-You have downloaded the complete p5.js library ZIP file with my own added projects and coding challenges, yay!
+You have downloaded the p5.js library complete with my own added projects and coding challenges, yay!
 
 # Contents of P5js
 
@@ -22,11 +22,11 @@ You have downloaded the complete p5.js library ZIP file with my own added projec
 
 ## A Star Pathfinding Algorithm
 
-Attempt at implementation of the A* pathfinding algorithm to find the optimal path between two points in a 2D grid.
+My attempt at implementation of the A* pathfinding algorithm to find the optimal path between two points in a 2D grid.
 
 ## Cube Wave by Bees and Bombs
 
-Attempt recreate a 3D @beesandbombs GIF with p5.js and the WebGL renderer.
+My attempt to recreate a 3D @beesandbombs GIF with p5.js and the WebGL renderer.
 
 ## Fractal Trees - Recursive
 
