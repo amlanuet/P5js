@@ -30,15 +30,15 @@ My attempt to recreate a 3D @beesandbombs GIF with p5.js and the WebGL renderer.
 
 ## Fractal Trees - Recursive
 
-Attempt at implement fractal trees with recursion in p5.js.
+My attempt at implement fractal trees with recursion in p5.js.
 
 ## Maze Generator\
 
-Using a stack and generating a maze using the Depth-First Search and Recursive algorithm.
+My attempt at using a stack and generating a maze using the Depth-First Search and Recursive algorithm.
 
 ## Snowfall
 
-Attempt to create a snowfall simulation using p5.js, sprite sheets and Perlin noise wind
+My attempt to create a snowfall simulation using p5.js, sprite sheets and Perlin noise wind
 
 ## Sudo Hilbert Curve
 
