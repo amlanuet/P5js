@@ -1,6 +1,6 @@
 # Welcome to my P5 Experience/project DEMOS
 
-You have downloaded the p5.js library complete with my own added projects and coding challenges, yay!
+You have downloaded the p5.js library complete with my own added projects/coding challenges, yay!
 
 # Contents of P5js
 
