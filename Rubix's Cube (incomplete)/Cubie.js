@@ -1,5 +1,5 @@
 class Cubie {
-  constructor(PMatrix3D m) {
+  constructor(m) {
     matrix = m;
   }
   show() {
