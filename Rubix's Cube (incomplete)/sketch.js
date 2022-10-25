@@ -18,8 +18,8 @@ const colors = [
 ];
 
 const dim = 3;
-// const cube = []; // Cubie[dim][dim][dim]; initialized in setup()
-const cube = new Cubie(dim*dim*dim);
+const cube = []; // Cubie[dim][dim][dim]; initialized in setup()
+// const cube = new Cubie(dim*dim*dim);
 
 function setup() {
   // Disable the context menu on the canvas so the camera can use the right mouse button
@@ -33,7 +33,7 @@ function setup() {
     for (let y = -1; y <= dim; y++) {
       cube[i][j] = [];
       for (let z = -1; z <= dim; z++) {
-        PMatrix3D m = new PMatrix3D();
+        matrix = new PMatrix3D();
         matrix.translate(x, y, z)
         cube[index] = new Cubie(matrix);
         index++;
