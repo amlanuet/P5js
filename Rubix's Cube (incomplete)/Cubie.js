@@ -1,14 +1,14 @@
 class Cubie {
-   PMatrix3D matrix;
+   PMatrix3D trix;
   constructor(PMatrix3D m) {
-    matrix = m;
+    trix = m;
   }
   show() {
     fill(255);
     stroke(0);
-    strokeWeight(8);
+    strokeWeight(0.01);
     pushMatrix();
-    applyMatrix(matrix);
+    applyMatrix(trix);
     box(1);
     pop();
   }
