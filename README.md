@@ -11,6 +11,7 @@ You have downloaded the p5.js library complete with my own added projects/coding
 * Snowfall
 * Sudo Hilbert Curve
 * The Binary Search Tree (console only)
+* p5.easycam.js
 * p5.js file
 * p5.min.js file
 * addons folder
@@ -32,9 +33,13 @@ My attempt to recreate a 3D @beesandbombs GIF with p5.js and the WebGL renderer.
 
 My attempt at implement fractal trees with recursion in p5.js.
 
-## Maze Generator\
+## Maze Generator
 
 My attempt at using a stack and generating a maze using the Depth-First Search and Recursive algorithm.
+
+## Rubic's Cube
+
+My attemt to create a working and solvable rubix's cube in P5js with easycam and javascript 
 
 ## Snowfall
 
@@ -47,6 +52,10 @@ I attempt to animate the path of the classic "space filling curve" known as the 
 ## The Binary Search Tree (console only)
 
 Here I attempt to implement a classic data structure: The Binary Search Tree.
+
+## p5.easycam.js
+
+The p5.EasyCam Library - Easy 3D CameraControl for p5.js and WEBGL. p5.EasyCam is a dericative of the original PeasyCam Library by Jonathan Feinberg and combines new useful features with the great look and feel of its parent.
 
 ## p5.js
 
