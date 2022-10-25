@@ -19,7 +19,7 @@ const colors = [
 
 const dim = 3;
 // const cube = []; // Cubie[dim][dim][dim]; initialized in setup()
-Cubie[] cube = new Cubie(dim*dim*dim);
+const cube = new Cubie(dim*dim*dim);
 
 function setup() {
   // Disable the context menu on the canvas so the camera can use the right mouse button
