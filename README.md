@@ -8,6 +8,7 @@ You have downloaded the p5.js library complete with my own added projects/coding
 * Cube Wave by Bees and Bombs
 * Fractal Trees - Recursive
 * Maze Generator
+* Rubix's Cube
 * Snowfall
 * Sudo Hilbert Curve
 * The Binary Search Tree (console only)
