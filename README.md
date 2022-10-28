@@ -40,7 +40,7 @@ My attempt at using a stack and generating a maze using the Depth-First Search a
 
 ## Rubic's Cube
 
-My attemt to create a working and solvable rubix's cube in P5js with easycam and javascript 
+My attemt to create a working and (not yet solvable) rubix's cube in P5js with easycam and javascript 
 
 ## Snowfall
 
