@@ -8,6 +8,16 @@ function setup() {
       values[i] = random(height);
    }
    frameRate(5);
+   quickSort(values, 0, values.length);
+}
+
+function quickSort(arr, start, end) {
+   if (start >= end) {
+      return;
+   }
+   let index = partition(arr, start, end);
+   quickSort(arr, start, index -1);
+   quickSort(arr, index + 1, end);
 }
 
 function draw() {
